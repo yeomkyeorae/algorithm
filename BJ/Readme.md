@@ -4,9 +4,9 @@
 
 #### [1987번. 알파벳](https://www.acmicpc.net/problem/1987)
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/1987_alphabet.py)
 
-![1987](C:\Users\student\Desktop\1987.PNG)
+![1987](.\images\1987.PNG)
 
 > 실패한 이유?
 
