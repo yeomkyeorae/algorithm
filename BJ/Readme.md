@@ -20,3 +20,13 @@
 
 ## 성공한 문제
 
+#### [1026.번 보물](https://www.acmicpc.net/problem/1026)
+
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/1026_treasure.py)
+
+![이미지 이름](./images/1026.png)
+
+> 성공 전략
+
+- S의 최솟값을 구하기 위한 전략으로, 한 배열은 오름차순으로 다른 배열은 내림차순으로 정렬해 작은 값과 큰 값이 곱해지도록 함.
+
