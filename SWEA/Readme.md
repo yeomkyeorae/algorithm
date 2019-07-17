@@ -10,7 +10,7 @@
 
 [코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_mid_mean_value.py)
 
-![이미지 이름](C:\Users\student\Desktop\algorithm\SWEA\images\D2_mid_mean_value.PNG)
+![이미지 이름](./images/D2_mid_mean_value.PNG)
 
 > 성공전략
 
@@ -23,7 +23,7 @@
 
 [코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_assist_grading.py)
 
-![이미지 이름](C:\Users\student\Desktop\algorithm\SWEA\images\D2_assist_grading.PNG)
+![이미지 이름](./images/D2_assist_grading.PNG)
 
 > 성공전략
 

@@ -24,7 +24,7 @@
 
 [코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/1026_treasure.py)
 
-![이미지 이름](./images/1026.png)
+![이미지 이름](./images/1026.PNG)
 
 > 성공 전략
 
