@@ -69,7 +69,7 @@
 
 #### 지그재그숫자
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_zigzag.py)
 
 ![이미지 이름](./images/D2_zigzag.PNG)
 
@@ -81,7 +81,7 @@
 
 #### 초심자의 회문 검사
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_palindrome_checking.py)
 
 ![이미지 이름](./images/D2_palindrome_checking.PNG)
 
