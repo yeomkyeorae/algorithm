@@ -90,3 +90,15 @@
 - `str`객체를 거꾸로 만들기 위해서 string[ : : -1]과 같이 접근하였다.
 - `list comprehension`!
 
+
+
+#### 어디에 단어가 들어갈 수 있을까
+
+[코드로 이동하기]()
+
+![이미지](./images/D2_can_word_be_in.PNG)
+
+> 성공전략
+
+- 전체 탐색하면서 0을 만나면 `is_possible`를 0으로 초기화하고, 1을 만나면 `is_possible`값을 +1한다.
+- 0을 만나고 is_possible 값을 확인했을 때 특정 길이 K이면 개수에 +1한다. 
