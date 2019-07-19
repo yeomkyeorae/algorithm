@@ -8,7 +8,7 @@
 
 ## D2
 
-#### [중간 평균값 구하기]([https://www.swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AV6kld8aisgDFASb&contestProbId=AV5Pw_-KAdcDFAUq&probBoxId=AV9oaSMa3DEDFAQc&type=PROBLEM&problemBoxTitle=%5BD1%7ED2+%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4%5D+%EA%B8%B0%EC%B4%88+%EB%8B%A4%EC%A7%80%EA%B8%B0+Part2&problemBoxCnt=14](https://www.swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AV6kld8aisgDFASb&contestProbId=AV5Pw_-KAdcDFAUq&probBoxId=AV9oaSMa3DEDFAQc&type=PROBLEM&problemBoxTitle=[D1~D2+문제풀이]+기초+다지기+Part2&problemBoxCnt=14))
+#### 중간 평균값 구하기
 
 [코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_mid_mean_value.py)
 
@@ -21,7 +21,7 @@
 
 
 
-#### [조교의 성적 매기기]([https://www.swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AV6kld8aisgDFASb&contestProbId=AV5PwGK6AcIDFAUq&probBoxId=AV9oaSMa3DEDFAQc&type=PROBLEM&problemBoxTitle=%5BD1%7ED2+%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4%5D+%EA%B8%B0%EC%B4%88+%EB%8B%A4%EC%A7%80%EA%B8%B0+Part2&problemBoxCnt=14](https://www.swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AV6kld8aisgDFASb&contestProbId=AV5PwGK6AcIDFAUq&probBoxId=AV9oaSMa3DEDFAQc&type=PROBLEM&problemBoxTitle=[D1~D2+문제풀이]+기초+다지기+Part2&problemBoxCnt=14))
+#### 조교의 성적 매기기
 
 [코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_assist_grading.py)
 
@@ -35,7 +35,7 @@
 
 
 
-#### [스도쿠 검증]([https://www.swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AV6kld8aisgDFASb&contestProbId=AV5Psz16AYEDFAUq&probBoxId=AV9oaSMa3DEDFAQc&type=PROBLEM&problemBoxTitle=%5BD1%7ED2+%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4%5D+%EA%B8%B0%EC%B4%88+%EB%8B%A4%EC%A7%80%EA%B8%B0+Part2&problemBoxCnt=14](https://www.swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AV6kld8aisgDFASb&contestProbId=AV5Psz16AYEDFAUq&probBoxId=AV9oaSMa3DEDFAQc&type=PROBLEM&problemBoxTitle=[D1~D2+문제풀이]+기초+다지기+Part2&problemBoxCnt=14))
+#### 스도쿠검증
 
 [코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_sdoku_checking.py)
 
@@ -54,7 +54,7 @@
 
 
 
-#### [시각 덧셈]([https://www.swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AV6kld8aisgDFASb&contestProbId=AV5PttaaAZIDFAUq&probBoxId=AV9oaSMa3DEDFAQc&type=PROBLEM&problemBoxTitle=%5BD1%7ED2+%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4%5D+%EA%B8%B0%EC%B4%88+%EB%8B%A4%EC%A7%80%EA%B8%B0+Part2&problemBoxCnt=14](https://www.swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AV6kld8aisgDFASb&contestProbId=AV5PttaaAZIDFAUq&probBoxId=AV9oaSMa3DEDFAQc&type=PROBLEM&problemBoxTitle=[D1~D2+문제풀이]+기초+다지기+Part2&problemBoxCnt=14))
+#### 시각 덧셈
 
 [코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_add_time.py)
 
@@ -64,4 +64,29 @@
 
 - 분을 더했을 때 60이 넘으면 시간을 더하고
 - 시간을 더했을 때 12가 넘으면 1~12 사이 단위로 변환
+
+
+
+#### 지그재그숫자
+
+[코드로 이동하기]()
+
+![이미지 이름](./images/D2_zigzag.PNG)
+
+> 성공전략
+
+- `list comprehension`을 적절히 활용하였다. 짱짱
+
+
+
+#### 초심자의 회문 검사
+
+[코드로 이동하기]()
+
+![이미지 이름](./images/D2_palindrome_checking.PNG)
+
+> 성공전략
+
+- `str`객체를 거꾸로 만들기 위해서 string[ : : -1]과 같이 접근하였다.
+- `list comprehension`!
 
