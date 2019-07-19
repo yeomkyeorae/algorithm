@@ -94,7 +94,7 @@
 
 #### 어디에 단어가 들어갈 수 있을까
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_can_word_be_in.py)
 
 ![이미지](./images/D2_can_word_be_in.PNG)
 
@@ -102,3 +102,4 @@
 
 - 전체 탐색하면서 0을 만나면 `is_possible`를 0으로 초기화하고, 1을 만나면 `is_possible`값을 +1한다.
 - 0을 만나고 is_possible 값을 확인했을 때 특정 길이 K이면 개수에 +1한다. 
+
