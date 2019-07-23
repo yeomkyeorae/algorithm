@@ -6,7 +6,7 @@
 
 #### 달팽이 숫자
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_snail_number.py)
 
 ![달팽이 숫자](./images/D2_snail_number.PNG)
 
@@ -115,9 +115,9 @@
 
 #### 쉬운 거스름돈
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_easy_changes.py)
 
-![쉬운 거스름돈](./images/D2_easy_change.PNG)
+![쉬운 거스름돈](./images/D2_easy_changes.PNG)
 
 > 성공전략
 
@@ -131,7 +131,7 @@
 
 #### 숫자 배열 회전
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_num_array_rotation.py)
 
 ![숫자 배열 회전](./images/D2_num_array_rotation.PNG)
 
@@ -144,7 +144,7 @@
 
 #### 숫자를 정렬하자
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_sort_num.py)
 
 ![숫자를 정렬하자](./images/D2_sort_num.PNG)
 
@@ -156,7 +156,7 @@
 
 #### 두 개의 숫자열
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_two_num_lists.py)
 
 ![두 개의 숫자열](./images/D2_two_num_lists.PNG)
 
