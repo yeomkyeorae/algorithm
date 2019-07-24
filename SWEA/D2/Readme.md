@@ -2,12 +2,6 @@
 
 # 실패한 문제 & 진행중인 문제
 
-#### 달팽이 숫자
-
-[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_snail_number.py)
-
-![달팽이 숫자](./images/D2_snail_number.PNG)
-
 
 
 # 성공한 문제
@@ -161,3 +155,14 @@
 - 작은 크기의 리스트를 기준으로, 그 리스트의 각 요소들을 큰 크기의 리스트 값과 곱해 새로운 리스트를 생성함. 예를 들면 위의 Ai에서 1값이 아래 Bj의 3, 6, -7과 곱한 값을 저장하는 식임. 
 - 위와 같은 방식을 이용하면 [[1이 곱한 값], [5가 곱한 값], [3이 곱한 값]]을 저장할 수 있음.
 - 일정 방향으로의 인덱스를 활용해 합을 구하고, 최대값을 출력함.
+
+
+
+
+
+#### 달팽이 숫자
+
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_snail_number.py)
+
+![달팽이 숫자](C:/Users/student/Desktop/algorithm/SWEA/D2/images/D2_snail_number.PNG)
+
