@@ -162,7 +162,17 @@
 
 #### 달팽이 숫자
 
-[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2_snail_number.py)
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/D2_snail_number.py)
 
-![달팽이 숫자](C:/Users/student/Desktop/algorithm/SWEA/D2/images/D2_snail_number.PNG)
+![달팽이 숫자](./images/D2_snail_number.PNG)
 
+> 성공전략
+
+- (0, 0)에서 시작해 반시계 방향으로(오른쪽 -> 아래 -> 왼쪽 -> 위) 계속 이동하는 규칙성에 의거.
+- 반시계 방향으로 이동하면서 그 반경은 지속적으로 감소하는 것에 착안.
+- 위의 경우 오른쪽으로 3, 아래로 2(3-1), 왼쪽으로 2(3-1), 위로 1(2-1) 변화하는 것을 인지.
+- 또한, 오른쪽이나 왼쪽으로 이동할 때는 row index가 고정되고, 위나 아래로 이동할 때는 col index가 고정되는 것을 반영.
+
+> 개선방향
+
+- 분명히 더 나은 방법이 있을텐데 ... 너무 노가다로 풀었다.
