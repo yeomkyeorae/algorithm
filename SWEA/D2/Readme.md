@@ -4,7 +4,7 @@
 
 #### 가랏! RC카!
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/unfinished/D2_go_rc_car.py)
 
 ![가랏! RC카!](./images/D2_go_rc_car.PNG)
 
@@ -187,7 +187,7 @@
 
 #### 날짜 계산기
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/D2_date_calc.py)
 
 ![날짜 계산기](./images/D2_date_calc.PNG)
 
@@ -203,7 +203,7 @@
 
 #### 간단한 압축 풀기
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/D2_easy_decompress.py)
 
 ![간단한 압축 풀기](./images/D2_easy_decompress.PNG)
 
@@ -223,7 +223,7 @@
 
 #### 간단한 소인수분해
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/D2_easy_factorization.py)
 
 ![간단한 소인수분해](./images/D2_easy_factorization.PNG)
 
