@@ -236,7 +236,7 @@
 
 #### 새로운 불면증 치료법
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/D2_new_insomnia_remedy.py)
 
 ![새로운 불면증 치료법](./images/D2_new_insomnia_remedy.PNG)
 
@@ -250,7 +250,7 @@
 
 #### 아름이의 돌 던지기
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/D2_areum_rock_throwing.py)
 
 ![아름이의 돌 던지기](./images/D2_areum_rock_throwing.PNG)
 
@@ -263,7 +263,7 @@
 
 #### 수도 요금 경쟁
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/D2_water_fare_compete.py)
 
 ![수도 요금 경쟁](./images/D2_water_fare_compete.PNG)
 

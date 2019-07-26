@@ -12,7 +12,7 @@
 
 #### [S/W 문제해결 기본] 3일차 - String
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D3/D3_3day_String.py)
 
 ![3일차 - String](./images/D3_3day_String.PNG)
 
@@ -24,7 +24,7 @@
 
 #### [S/W 문제해결 기본] 2일차 - Sum
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D3/D3_2day_Sum.py)
 
 ![2일차 - Sum](./images/D3_2day_Sum.PNG)
 
