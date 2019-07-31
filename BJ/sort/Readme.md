@@ -10,7 +10,7 @@
 
 #### [1026번 보물](https://www.acmicpc.net/problem/1026)
 
-[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/1026_treasure.py)
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/sort/1026_treasure.py)
 
 ![이미지 이름](./images/1026.PNG)
 
@@ -20,9 +20,9 @@
 
 
 
-#### [1427번 소트인사이드]()
+#### [1427번 소트인사이드](https://www.acmicpc.net/problem/1427)
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/sort/1427_sort_inside.py)
 
 ![1427](./images/1427.PNG)
 

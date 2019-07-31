@@ -42,7 +42,7 @@
 
 #### [S/W 문제해결 기본] 1일차 - View
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D3/D3_1day_View.py)
 
 ![1일차 - View](./images/D3_1day_View.PNG)
 

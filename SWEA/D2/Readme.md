@@ -275,7 +275,7 @@
 
 #### [S/W 문제해결 기본] 1일차 - 최빈수 구하기
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/D2_1day_mode.py)
 
 ![최빈수 구하기](./images/D2_1day_mode.PNG)
 

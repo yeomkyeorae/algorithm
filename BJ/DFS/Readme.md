@@ -4,7 +4,7 @@
 
 #### [1987번. 알파벳](https://www.acmicpc.net/problem/1987)
 
-[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/1987_alphabet.py)
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/DFS/1987_alphabet.py)
 
 ![1987](./images/1987.PNG)
 
