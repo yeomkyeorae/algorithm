@@ -36,7 +36,7 @@
 
 #### [1181번 단어 정렬](https://www.acmicpc.net/problem/1181)
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/sort/1181_word_sort.py)
 
 ![단어 정렬](./images/1181.PNG)
 
@@ -52,7 +52,7 @@
 
 #### [10814번 나이순 정렬](https://www.acmicpc.net/problem/10814)
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/sort/10814_order_by_age.py)
 
 ![나이순 정렬](./images/10814.PNG)
 
@@ -67,7 +67,7 @@
 
 #### [11651번 좌표 정렬하기2](https://www.acmicpc.net/problem/11651)
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/BJ/sort/11651_sort_coor2.py)
 
 ![좌표 정렬하기2](./images/11651.PNG)
 

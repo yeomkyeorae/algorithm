@@ -61,7 +61,7 @@
 
 #### 4831. 전기버스
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D3/D3_1day_elec_bus.py)
 
 ![전기버스](./images/D3_1day_elec_bus.PNG)
 
