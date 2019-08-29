@@ -1,60 +1,59 @@
 from collections import deque
 
-result = []
 
-def dfs(dic, stack, start, did_you_go, result):
+def dfs(start, edge_dict):
+    global result
+    global visited
 
+    if visited[start - 1] == 1:
+        return
 
-    if did_you_go[start - 1] == 1:
-        return result
-
-    did_you_go[start - 1] = 1
+    visited[start - 1] = 1
     result.append(str(start))
 
-    for value in dic[start]:
-        if did_you_go[value - 1] == 0:
-            result = dfs(dic, stack, value, did_you_go, result)
+    for edge in edge_dict[start]:
+        if visited[edge - 1] == 0:
+            dfs(edge, edge_dict)
 
 
-def bfs(dic, queue, did_you_go, result):
+def bfs(start, edge_dict):
+    global result
+    global visited
+
+    queue = deque()
+    queue.append(start)
+    visited[start - 1] = 1
 
     while len(queue) > 0:
-        key = queue.popleft()
-        did_you_go[key - 1] = 1
-        for value in dic[key]:
-            if did_you_go[value - 1] == 1:
-                continue
-            elif value not in queue:
-                queue.append(value)
-        result.append(str(key))
+        start = queue.popleft()
+        result.append(str(start))
 
-    return result
+        for edge in edge_dict[start]:
+            if visited[edge - 1] == 0:
+                queue.append(edge)
+                visited[edge - 1] = 1
 
 
 if __name__ == '__main__':
     vertex, edge, start = map(int, input().split())
 
-    edge_dict = {k: [] for k in range(1, vertex + 1)}
-    tmp_list = []
+    edge_dict = {k: [] for k in range(1 , vertex + 1)}
     for _ in range(edge):
         a, b = map(int, input().split())
-        tmp_list.append((a, b))
-
-    tmp_list.sort(key=lambda x: x[1])
-
-    for a, b in tmp_list:
         edge_dict[a].append(b)
         edge_dict[b].append(a)
 
+    for key in edge_dict.keys():
+        edge_dict[key].sort()
+
     # dfs
-    stack = []
-    did_you_go = [0] * vertex
-    result1 = dfs(edge_dict, stack, start, did_you_go, [])
-    print(' '.join(result1))
+    result = []
+    visited = [0] * vertex
+    dfs(start, edge_dict)
+    print(' '.join(result))
 
     # bfs
-    queue = deque()
-    queue.append(start)
-    did_you_go = [0] * vertex
-    result2 = bfs(edge_dict, queue, did_you_go, [])
-    print(' '.join(result2))
+    result = []
+    visited = [0] * vertex
+    bfs(start, edge_dict)
+    print(' '.join(result))
