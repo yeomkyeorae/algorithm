@@ -76,7 +76,7 @@
 
 #### 5178. 노드의 합
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D3/SWEA_5178_sum_of_nodes.py)
 
 ![5178](./images/5178.PNG)
 

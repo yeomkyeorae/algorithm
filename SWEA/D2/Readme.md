@@ -287,7 +287,7 @@
 
 #### 5174. Subtree
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/SWEA_5174_subtree.py)
 
 ![5174](./images/5714.PNG)
 
@@ -303,7 +303,7 @@
 
 #### 5176. 이진 탐색
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/SWEA_5176_binary_search.py)
 
 ![5176](./images/5176.PNG)
 
@@ -321,7 +321,7 @@
 
 #### 5177. 이진 힙
 
-[코드로 이동하기]()
+[코드로 이동하기](https://github.com/yeomkyeorae/algorithm/blob/master/SWEA/D2/SWEA_5177_binary_heap.py)
 
 ![5177](./images/5177.PNG)
 
