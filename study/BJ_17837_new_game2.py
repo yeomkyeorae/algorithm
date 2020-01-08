@@ -75,6 +75,9 @@ def blue(old_r, old_c, new_r, new_c, horse_num):
         horse_dict[popped] = [new_r + 1, new_c + 1, horse_dict[popped][2]]
         t_list.append(popped)
 
+    if color_board[new_r][new_c] == 0:
+        t_list.reverse()
+
     horse_board[new_r][new_c] = horse_board[new_r][new_c] + t_list
 
     return new_r, new_c
