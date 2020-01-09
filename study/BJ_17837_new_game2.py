@@ -38,7 +38,7 @@ def white_or_red(old_r, old_c, new_r, new_c, horse_num, type_num):
     for i, h in enumerate(horse_board[old_r][old_c]):
         if h == horse_num:
             ix = i
-        break
+            break
     t_list = []
     for _ in range(length - ix):
         popped = horse_board[old_r][old_c].pop()
@@ -58,7 +58,7 @@ def blue(old_r, old_c, new_r, new_c, horse_num):
     for i, h in enumerate(horse_board[old_r][old_c]):
         if h == horse_num:
             ix = i
-        break
+            break
 
     if 0 > new_r or n <= new_r:
         return old_r, old_c
@@ -112,13 +112,14 @@ def go(one_list, horse_num):
 def check(horse_board):
     for i in range(n):
         for j in range(n):
-            if len(horse_board[i][j]) == 4:
+            if len(horse_board[i][j]) >= 4:
                 return True
     return False
 
 
 answer = 0
 flag = False
+from pprint import pprint
 for i in range(1, 1001):
     for j in range(k):
         one_list = horse_dict[j + 1]
