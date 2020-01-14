@@ -1,8 +1,6 @@
-a = {
-    1: [1,2,3],
-    2: [4,5,6]
-}
+a = [(3, 1), (2, 1), (1, 1)]
 
-b = a[1]
-b = 1000
+a.sort(key=lambda x: x[0])
+a.sort(key=lambda x: x[1])
+
 print(a)
