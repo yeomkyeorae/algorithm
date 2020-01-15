@@ -10,19 +10,22 @@ def check(row, col):
 def calc(vertex):
     global MIN_VALUE
 
+    # 게리맨더링 보드 초기화
     gerry = []
     for _ in range(N):
         gerry.append([5] * N)
-    # 1
+
+    # 1: 오른쪽 아래로
     r, c = vertex[0][0], vertex[0][1]
     while True:
         r += direction_map[0][0]
         c += direction_map[0][1]
 
+        # 구역 표시
         for new_r in range(r - 1, -1, -1):
             gerry[new_r][c] = 2
 
-        if [r, c] in vertex:
+        if [r, c] in vertex:  # 시작점 중의 하나이면 최후의 구획!
             while True:
                 c = c + 1
                 if c == N:
@@ -30,7 +33,8 @@ def calc(vertex):
                 for new_r in range(r, -1, -1):
                     gerry[new_r][c] = 2
             break
-    # 2
+
+    # 2 왼쪽 아래로
     r, c = vertex[1][0], vertex[1][1]
     while True:
         r += direction_map[1][0]
@@ -48,7 +52,7 @@ def calc(vertex):
                     gerry[r][new_c] = 4
             break
 
-    # 3
+    # 3 왼쪽 위로
     r, c = vertex[2][0], vertex[2][1]
     while True:
         r += direction_map[2][0]
@@ -66,7 +70,7 @@ def calc(vertex):
                     gerry[new_r][c] = 3
             break
 
-    # 4
+    # 4 오른쪽 위로
     r, c = vertex[3][0], vertex[3][1]
     while True:
         r += direction_map[3][0]
@@ -84,6 +88,7 @@ def calc(vertex):
                     gerry[r][new_c] = 1
             break
 
+    # 각 구역별 점수 초기화
     num_dict = {
         1: 0,
         2: 0,
@@ -91,6 +96,7 @@ def calc(vertex):
         4: 0,
         5: 0
     }
+    # 점수 계산
     for r in range(N):
         for c in range(N):
             num_dict[gerry[r][c]] += board[r][c]
@@ -113,30 +119,17 @@ def go(row, col):
                     if a != c or b != d:
                         continue
                     start_r, start_c = row, col
-                    if flag:
-                        vertex.append([start_r, start_c])
-                        for _ in range(a):
-                            start_r += direction_map[0][0]
-                            start_c += direction_map[0][1]
-                        flag = check(start_r, start_c)
-                    if flag:
-                        vertex.append([start_r, start_c])
-                        for _ in range(b):
-                            start_r += direction_map[1][0]
-                            start_c += direction_map[1][1]
-                        flag = check(start_r, start_c)
-                    if flag:
-                        vertex.append([start_r, start_c])
-                        for _ in range(c):
-                            start_r += direction_map[2][0]
-                            start_c += direction_map[2][1]
-                        flag = check(start_r, start_c)
-                    if flag:
-                        vertex.append([start_r, start_c])
-                        for _ in range(d):
-                            start_r += direction_map[3][0]
-                            start_c += direction_map[3][1]
-                        flag = check(start_r, start_c)
+
+                    for i, v in enumerate([a, b, c, d]):
+                        if flag:
+                            vertex.append([start_r, start_c])
+                            for _ in range(v):
+                                start_r += direction_map[i][0]
+                                start_c += direction_map[i][1]
+                            flag = check(start_r, start_c)
+                        else:
+                            break
+
                     if flag:
                         calc(vertex)
 
