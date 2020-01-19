@@ -1,2 +1,1 @@
-a = '0'
-print(int(a))
+print(10 // 3)
