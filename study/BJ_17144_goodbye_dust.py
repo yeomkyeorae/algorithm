@@ -65,14 +65,17 @@ def operate():
         ix = i
     c = c - ix
 
+    flag = True
     for i in range(1, row + 1):
+        if board[r + i][c] == -1:
+            flag = False
+            break
         tmp = board[r + i][c]
         board[r + i][c] = before
         before = tmp
         ix = i
     r = ix
-    print(board)
-    if board[r][c] != -1:
+    if flag:
         for i in range(C - 1):
             if board[r][c + 1 + i] == -1:
                 break
@@ -81,36 +84,47 @@ def operate():
             before = tmp
 
     # 아 공기청정기 : 시계
-    # row, col = machine_loc[1][0], machine_loc[1][1]
-    # before = 0
-    # ix = -1
-    # for i in range(1, C - col):
-    #     tmp = board[row][col + i]
-    #     board[row][col + i] = before
-    #     before = tmp
-    #     ix = i
-    # c = col + ix
-    #
-    # for i in range(1, R - row):
-    #     tmp = board[row + i][c]
-    #     board[row + i][c] = before
-    #     before = tmp
-    #     ix = i
-    # r = row + ix
-    #
-    # for i in range(1, col + 1):
-    #     tmp = board[r][c - i]
-    #     board[r][c - i] = before
-    #     before = tmp
-    #     ix = i
-    # c = c - ix
-    #
-    # for i in range(1, R - row):
-    #     tmp = board[r - i][c]
-    #     if board[r - i][c] == -1:
-    #         continue
-    #     board[r - i][c] = before
-    #     before = tmp
+    row, col = machine_loc[1][0], machine_loc[1][1]
+    before = 0
+    ix = -1
+    for i in range(1, C - col):
+        tmp = board[row][col + i]
+        board[row][col + i] = before
+        before = tmp
+        ix = i
+    c = col + ix
+
+    for i in range(1, R - row):
+        tmp = board[row + i][c]
+        board[row + i][c] = before
+        before = tmp
+        ix = i
+    r = row + ix
+
+    for i in range(1, c + 1):
+        tmp = board[r][c - i]
+        board[r][c - i] = before
+        before = tmp
+        ix = i
+    c = c - ix
+
+    flag = True
+    for i in range(1, R - row):
+        if board[r - i][c] == -1:
+            flag = False
+            break
+        tmp = board[r - i][c]
+        board[r - i][c] = before
+        before = tmp
+        ix = i
+    r = ix
+    if flag:
+        for i in range(C - 1):
+            if board[r][c + 1 + i] == -1:
+                break
+            tmp = board[r][c + 1 + i]
+            board[r][c + 1 + i] = before
+            before = tmp
 
 
 def summation():
@@ -134,24 +148,8 @@ for r in range(R):
     board.append(input_list)
 
 for _ in range(T):
-    # diffuse()
+    diffuse()
     operate()
-for v in board:
-    print(v)
+
 answer = summation()
 print(answer)
-
-
-# 5 5 1
-# 1 2 3 4 5
-# 6 7 8 9 10
-# -1 11 12 13 14
-# -1 15 16 17 18
-# 19 20 21 22 23
-
-# 5 5 1
-# 1 2 3 4 5
-# 6 7 8 9 10
-# 11 12 -1 13 14
-# 15 16 -1 17 18
-# 19 20 21 22 23
