@@ -47,26 +47,24 @@ def bfs(one_board):
     d = deque()
     d.append([0, 0, 0, 0])
     visited[0][0][0] = 1
-    distance = 0
     while d:
         popped = d.popleft()
-        its_dist = popped[3]
-        if its_dist >= result:
+        distance = popped[3]
+        if distance >= result:
             return 0
         channel, row, col = popped[0], popped[1], popped[2]
         if channel == 4 and row == 4 and col == 4:
-            if its_dist < result:
-                result = its_dist
+            if distance < result:
+                result = distance
             return 1
         for r, c in zip(rows, cols):
             if 0 <= row + r < 5 and 0 <= col + c < 5 and visited[channel][row + r][col + c] == 0 and one_board[channel][row + r][col + c] == 1:
-                d.append([channel, row + r, col + c, distance])
+                d.append([channel, row + r, col + c, distance + 1])
                 visited[channel][row + r][col + c] = 1
         for z in zs:
             if 0 <= channel + z < 5 and visited[channel + z][row][col] == 0 and one_board[channel + z][row][col] == 1:
-                d.append([channel + z, row, col, distance])
+                d.append([channel + z, row, col, distance + 1])
                 visited[channel + z][row][col] = 1
-        distance += 1
 
     return 0
 
@@ -83,7 +81,7 @@ total_dict = {
 
 flag = False
 can_go_flag = False
-result = 120
+result = 60
 j = 0
 for stack_perm in permutations([0, 1, 2, 3, 4]):
     if flag:
