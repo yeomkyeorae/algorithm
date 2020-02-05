@@ -21,3 +21,9 @@ for t in range(1, tries + 1):
     for _ in range(A):
         battery.append(list(map(int, input().split())))
 
+    # 배터리를 board에 그리자
+
+    row_1, col_1 = 0, 0
+    row_2, col_2 = 9, 9
+    for p1, p2 in zip(person1, person2):
+        pass
