@@ -15,7 +15,10 @@ def find(input_list, row):
 
 
 def nearest(person_list, stair_list):
+    global stair_value
+
     where_to_stair = deque()
+    tmp_list = []
     for p in person_list:
         dist = 1000
         candidate_ix = -10
@@ -25,8 +28,9 @@ def nearest(person_list, stair_list):
                 dist = tmp_dist
                 candidate_ix = s_ix
             elif tmp_dist == dist:
-                if where_to_stair.count(candidate_ix) > where_to_stair.count(s_ix):
+                if stair_value[candidate_ix] > stair_value[s_ix]:
                     candidate_ix = s_ix
+        tmp_list.append(candidate_ix)
         where_to_stair.append([candidate_ix, dist])
 
     return where_to_stair
@@ -35,6 +39,7 @@ def nearest(person_list, stair_list):
 def move(where_to_stair):
     global stair_list
     global stair_value
+    global person_list
 
     ANSWER = 0
     arrived = []
@@ -42,8 +47,7 @@ def move(where_to_stair):
     ing_dict = {}
     for i in range(len(stair_value)):
         ing_dict[i] = deque()
-    ii = 0
-    while len(arrived) < len(stair_list):
+    while len(arrived) < len(person_list):
         for one_d in ing_dict.values():
             for _ in range(len(one_d)):
                 popped = one_d.popleft()
@@ -53,21 +57,23 @@ def move(where_to_stair):
                 else:
                     one_d.append(popped)
 
+        for i in range(len(where_to_stair)):
+            popped = where_to_stair.popleft()
+            if popped[1] == 0:
+                waitings.append(popped[0])
+            else:
+                popped[1] -= 1
+                where_to_stair.append(popped)
+
         for _ in range(len(waitings)):
             popped = waitings.popleft()
-            if len(ing_dict[popped]) < stair_value[popped]:
+            if len(ing_dict[popped]) < 3:
                 ing_dict[popped].append(stair_value[popped])
             else:
                 waitings.append(popped)
 
-        for i in range(len(where_to_stair)):
-            popped = where_to_stair.popleft()
-            popped[1] -= 1
-            if popped[1] == 0:
-                waitings.append(popped[0])
-            else:
-                where_to_stair.append(popped)
-        ANSWER += 1
+        if len(arrived) != len(person_list):
+            ANSWER += 1
     return ANSWER
 
 
@@ -86,4 +92,4 @@ for t in range(1, tries + 1):
         board.append(tmp_list)
     where_to_stair = nearest(person_list, stair_list)
     ANSWER = move(where_to_stair)
-    print('#{} {}'.format(t, ANSWER))
+    print('#{} {}'.format(t, ANSWER + 1))
