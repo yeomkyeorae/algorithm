@@ -1,1 +1,1 @@
-print(10 // 3)
+import heapq
