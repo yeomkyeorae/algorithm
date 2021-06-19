@@ -1,3 +1,11 @@
+import bisect
+
+
+def search(iters, score):
+    left_index = bisect.bisect_left(iters, score)
+    return len(iters) - left_index
+
+
 def solution(info, query):
     new_info = {}
     for inf in info:
@@ -10,29 +18,24 @@ def solution(info, query):
                 for v3 in [i3, '-']:
                     for v4 in [i4, '-']:
                         key = v1 + v2 + v3 + v4
-                        if key in new_info.keys():
-                            if score in new_info[key].keys():
-                                new_info[key][score] += 1
-                            else:
-                                new_info[key][score] = 1
+                        if key in new_info:
+                            new_info[key].append(score)
                         else:
-                            new_info[key] = {score: 1}
+                            new_info[key] = [score]
+
+    for key in new_info.keys():
+        new_info[key].sort()
 
     answer = []
     for q in query:
         q = q.replace(' and ', '')
         q, score = q.split(' ')
         score = int(score)
-
         cnt = 0
-        try:
-            keys = sorted(new_info[q].keys(), reverse=True)
-            for key in keys:
-                if key < score:
-                    break
-                cnt += new_info[q][key]
-        except Exception:
-            pass
-        answer.append(cnt)
+
+        if not q in new_info.keys():
+            answer.append(cnt)
+        else:
+            answer.append(search(new_info[q], score))
 
     return answer
