@@ -71,6 +71,6 @@ print(list(product(*nums)))
 ```python
 string = 'abcdefg'
 print(string.isalpha()) # True
-print(string.isalnum()  # True
+print(string.isalnum())  # True
 
 ```
