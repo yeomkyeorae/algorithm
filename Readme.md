@@ -37,21 +37,19 @@ print(bisect.bisect_left(arr, 5)) # 4: 새롭게 5가 들어온다면 이진 탐
 print(bisect.bisect_right(arr, 5)) # 5: 새롭게 5가 들어온다면 이진 탐색으로 찾은 값을 기준으로 오른쪽에 위치
 ```
 
-
-
 ### 순열, 조합
 
-`itertools`를 사용해 단순한 순열, 조합을 구할 때 사용. 
+`itertools`를 사용해 단순한 순열, 조합을 구할 때 사용.
 
 ```python
 from itertools import permutations, combinations
 
 nums = [1, 2, 3, 4, 5]
 
-print(list(permutations(nums, 2)))	
+print(list(permutations(nums, 2)))
 # [(1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 3) ...
 
-print(list(combinations(nums, 2)))  
+print(list(combinations(nums, 2)))
 # [(1, 2), (1, 3), (1, 4), (1, 5), (2, 3), (2, 4) ...
 ```
 
@@ -66,3 +64,13 @@ print(list(product(*nums)))
 # [(1, 4, 7), (1, 4, 8), (1, 4, 9), (1, 5, 7), (1, 5, 8) ...
 ```
 
+### 문자열 알파벳, 문자 여부
+
+`isalpha()`를 사용해 알파벳 여부를 검증. 또는 `isalnum()`를 사용해 알파벳, 숫자 여부를 검증.
+
+```python
+string = 'abcdefg'
+print(string.isalpha()) # True
+print(string.isalnum()  # True
+
+```
