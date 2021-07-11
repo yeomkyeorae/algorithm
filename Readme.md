@@ -74,3 +74,17 @@ print(string.isalpha()) # True
 print(string.isalnum())  # True
 
 ```
+
+### Counter
+dict 변수에 저장된 값 중 가장 높은 value를 갖는 객체를 찾을 때 `collection`의 `Counter`를 사용할 수 있다.
+```python
+from collections import Counter
+
+words = {'apple': 5, 'pear': 3, 'banana': 10}
+counts = Counter(words)
+
+# 첫 번째로 value 값을 갖는 요소 출력
+print(counts.most_common(1))
+
+# [('banana', 10)]
+```
