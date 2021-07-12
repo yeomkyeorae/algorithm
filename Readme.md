@@ -79,10 +79,25 @@ print(string.isalnum())  # True
 
 `defaultdict`를 사용하면 key가 있는지 없는지 확인할 필요없이 key에 따른 값을 할당하거나 추가(append)할 수 있다
 
-```python
+````python
 import collections
 
 dd = collections.defaultdict(list) # list: value의 초기 형태, []
 
 dd['fruit'].append('apple') # keyerror가 발생하지 않는다
 ```
+
+### Counter
+dict 변수에 저장된 값 중 가장 높은 value를 갖는 객체를 찾을 때 `collection`의 `Counter`를 사용할 수 있다.
+```python
+from collections import Counter
+
+words = {'apple': 5, 'pear': 3, 'banana': 10}
+counts = Counter(words)
+
+# 첫 번째로 value 값을 갖는 요소 출력
+print(counts.most_common(1))
+
+# [('banana', 10)]
+````
+
