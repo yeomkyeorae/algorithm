@@ -74,3 +74,15 @@ print(string.isalpha()) # True
 print(string.isalnum())  # True
 
 ```
+
+### dict에서 keyerror 없이 사용하기, defaultdict
+
+`defaultdict`를 사용하면 key가 있는지 없는지 확인할 필요없이 key에 따른 값을 할당하거나 추가(append)할 수 있다
+
+```python
+import collections
+
+dd = collections.defaultdict(list) # list: value의 초기 형태, []
+
+dd['fruit'].append('apple') # keyerror가 발생하지 않는다
+```
