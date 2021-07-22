@@ -75,6 +75,15 @@ print(string.isalnum())  # True
 
 ```
 
+### 알파벳을 숫자로 바꾸기
+
+`ord()`를 사용하면 문자의 유니코드 값을 돌려준다. ord('A')의 경우 65, ord('a')의 경우 97로 치환된다.
+
+```python
+print(ord('A'))  # 65
+print(ord('a'))  # 97
+```
+
 ### dict에서 keyerror 없이 사용하기, defaultdict
 
 `defaultdict`를 사용하면 key가 있는지 없는지 확인할 필요없이 key에 따른 값을 할당하거나 추가(append)할 수 있다
@@ -100,4 +109,3 @@ print(counts.most_common(1))
 
 # [('banana', 10)]
 ````
-
