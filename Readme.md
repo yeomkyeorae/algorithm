@@ -109,3 +109,20 @@ print(counts.most_common(1))
 
 # [('banana', 10)]
 ````
+
+### Min Heap
+
+최소 힙을 사용하기 위해 `heapq`을 사용할 수 있다
+
+```python
+import heapq
+
+heap = []
+heapq.heappush(heap, 3)     # 힙 삽입
+heapq.heappush(heap, 5)
+heapq.heappush(heap, 4)
+
+# 최솟값 가져오기
+while heap:
+    print(heapq.heappop())     # 3 4 5
+```
