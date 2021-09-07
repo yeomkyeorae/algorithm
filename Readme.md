@@ -138,3 +138,14 @@ print(int_value)            # 10
 binary_value = format(10, "b")  # int to binary
 print(binary_value)             # "1010"
 ```
+
+### Python 부동 소수점 정확히 표현하기
+decimal 패키지 사용
+```python
+import decimal
+
+d = decimal.Decimal('0.00001')
+d += decimal.Decimal('0.00001')
+
+print(decimal.Decimal('0.00001') === decimal.Decimal('0.00001'))    # True
+```
