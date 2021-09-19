@@ -64,6 +64,17 @@ print(list(product(*nums)))
 # [(1, 4, 7), (1, 4, 8), (1, 4, 9), (1, 5, 7), (1, 5, 8) ...
 ```
 
+중복 조합 구하기(combinations_with_replacement)
+combinations_with_replacement(반복 가능 객체, 중복 개수)
+
+```python
+from itertools import combinations_with_replacement
+
+for el in combinations_with_replacement([1, 2, 3, 4], 2):
+    print(el)
+    # (1, 1) (1, 2) (1, 3) (1, 4) (2, 2) (2, 3) (2, 4) (3, 3) (3, 4) (4, 4)
+```
+
 ### 문자열 알파벳, 문자 여부
 
 `isalpha()`를 사용해 알파벳 여부를 검증. 또는 `isalnum()`를 사용해 알파벳, 숫자 여부를 검증.
