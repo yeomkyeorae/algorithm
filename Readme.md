@@ -150,6 +150,32 @@ binary_value = format(10, "b")  # int to binary
 print(binary_value)             # "1010"
 ```
 
+### bin, oct, hex
+각각 2진수(binary), 8진수(octal), 16진수(hexadecimal) 변환
+```python
+bin(42) # '0b101010'
+oct(42) # '0o52'
+hex(42) # '0x2a'
+```
+
+integer로 변환
+```python
+int('0b101010',2)   # 42
+int('0o52', 8)      # 42
+int('0x2a', 16)     # 42
+```
+
+format 내장 함수를 활용하면 진수 문자열 앞에 포함된 접두어를 제외할 수 있다
+```python
+format(42, 'b')     # '101010'
+format(42, 'o')     # '52'
+format(42, 'x')     # '2a'
+
+# 접두어를 포함시킬 수도 있다
+format(42, '#b')    # '0b101010'
+```
+출처: [[파이썬] 2진수, 8진수, 16진수 다루기](https://www.daleseo.com/python-int-bases/) 
+
 ### Python 부동 소수점 정확히 표현하기
 decimal 패키지 사용
 ```python
