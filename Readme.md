@@ -176,6 +176,20 @@ format(42, '#b')    # '0b101010'
 ```
 출처: [[파이썬] 2진수, 8진수, 16진수 다루기](https://www.daleseo.com/python-int-bases/) 
 
+### 2진법 ~ 16번 진법 모두 구하기
+```python
+import string
+
+tmp = string.digits + string.ascii_uppercase
+def convert(num, base):
+    q, r = divmod(num, base)
+    if q == 0:
+        return tmp[r]
+    else:
+        return convert(q, base) + tmp[r]
+```
+출처: [[Python] 진법 변환 총 정리?!](https://security-nanglam.tistory.com/508)
+
 ### Python 부동 소수점 정확히 표현하기
 decimal 패키지 사용
 ```python
