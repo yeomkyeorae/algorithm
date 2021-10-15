@@ -14,7 +14,12 @@ def solution(board):
         candi_width = max_row
     
     is_finished = False
-    for window in range(candi_width, 0, -1):
+    left = 0
+    right = candi_width
+    window = (left + right) // 2
+    while not is_finished:
+        has_square = False
+
         for row in range(max_row - window + 1):
             not_r = -1
             not_c = -1
@@ -37,14 +42,21 @@ def solution(board):
                         break
             
                 if done:
-                    is_finished = True
+                    has_square = True
                     break
                     
-            if is_finished:
+            if has_square:
                 break
-                
-        if is_finished:
-            answer = window * window
-            break
+    
+        if has_square:
+            left = window + 1
+            window = (left + right) // 2
+        else:
+            right = window - 1
+            window = (left + right) // 2
+
+        if left > right:
+            is_finished = True
+            answer = window * window   
             
     return answer
