@@ -144,7 +144,7 @@ heapq.heappush(heap, 4)
 
 # 최솟값 가져오기
 while heap:
-    print(heapq.heappop())     # 3 4 5
+    print(heapq.heappop(heap))     # 3 4 5
 ```
 
 ### Binary to Int, Int to Binary
@@ -207,3 +207,16 @@ d += decimal.Decimal('0.00001')
 
 print(decimal.Decimal('0.00001') === decimal.Decimal('0.00001'))    # True
 ```
+
+
+
+### Python maxsize 설정
+
+알고리즘 풀이 중 초기 최댓값이나 최솟값을 설정할 경우 유용
+
+```python
+import sys
+
+min_value = sys.maxsize
+```
+
