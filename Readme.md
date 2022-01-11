@@ -220,3 +220,22 @@ import sys
 min_value = sys.maxsize
 ```
 
+### sort시 function 정의해서 사용
+```python
+from functools import cmp_to_key
+
+def compare(item1, item2):
+    if item1[1] > item2[1]:
+        return 1
+    elif item1[1] < item2[1]:
+        return -1
+    else:
+        if item1[0] > item2[0]:
+            return 1
+        else:
+            return -1
+
+
+lst = [[0, 1], [4, 2], [5, 3]]
+lst.sort(key=cmp_to_key(compare))
+```
