@@ -187,7 +187,7 @@ format(42, '#b')    # '0b101010'
 ```python
 import string
 
-tmp = string.digits + string.ascii_uppercase
+tmp = string.digits + string.ascii_uppercase    # '0123456789' + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 def convert(num, base):
     q, r = divmod(num, base)
     if q == 0:
