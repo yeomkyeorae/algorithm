@@ -253,3 +253,17 @@ def is_prime(n):
         i += 1
     return True
 ```
+
+### 최대공약수(GCD), 최소공배수(LCM)
+```python
+def GCD(x, y):
+    while y:
+        x, y= y, x % y
+    return x
+
+def LCM(x, y):
+    result = (x * y)// GCD(x, y)
+    return result
+
+출처: [[Python] 최소공배수, 최대공약수](https://codingpractices.tistory.com/34)
+```
