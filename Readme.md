@@ -254,6 +254,24 @@ def is_prime(n):
     return True
 ```
 
+### 에라스토테네스의 체(소수)
+```python
+N = int(input())
+
+nums = [1] * (N + 1)
+nums[0] = 0
+nums[1] = 0
+
+primes = []
+for i in range(2, N + 1):
+    if nums[i]:
+        primes.append(i)
+        for j in range(2 * i, N + 1, i):
+            nums[j] = 0
+
+print(primes)
+```
+
 ### 최대공약수(GCD), 최소공배수(LCM)
 ```python
 def GCD(x, y):
