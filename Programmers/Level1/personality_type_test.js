@@ -37,7 +37,7 @@ function getPersonalResult(resultSurvey) {
     for(let[a, b] of types) {
         aScore = resultSurvey[a]
         bScore = resultSurvey[b]
-        if(aScore == = bScore) {
+        if(aScore === bScore) {
             answer += a
         } else if(aScore > bScore) {
             answer += a
@@ -52,11 +52,9 @@ function getPersonalResult(resultSurvey) {
 function solution(survey, choices) {
     const resultSurvey = initSurvey()
 
-    for(let i=0
-        i < survey.length
-        i++) {
+    for (let i = 0; i < survey.length;  i++) {
         const scoreBoard = getScoreBoard(survey[i])
-        if(choices[i] != = 4) {
+        if(choices[i] !== 4) {
             const[personalType, score] = scoreBoard[choices[i]]
             resultSurvey[personalType] += score
         }
